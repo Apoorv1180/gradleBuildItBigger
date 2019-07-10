@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 public class DisplayJokeActivity extends AppCompatActivity {
 
+    public static String JOKE_KEY= "joke_key";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,7 +16,7 @@ public class DisplayJokeActivity extends AppCompatActivity {
 
         String joke = null;
         Intent intent = getIntent();
-        joke = intent.getStringExtra("joke");
+        joke = intent.getStringExtra(JOKE_KEY);
 
         if (joke != null){
             jokeview.setText(joke);

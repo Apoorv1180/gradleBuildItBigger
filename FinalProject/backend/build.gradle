@@ -45,5 +45,5 @@ appengine {
     run {      // local (dev_appserver) configuration (standard environments only)
         port = 8085                // default
     }
-    appengine.tools.cloudSdkHome="C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk"
+//    appengine.tools.cloudSdkHome="C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk"
 }

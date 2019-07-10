@@ -83,7 +83,7 @@ public class MainActivityFragment extends Fragment {
         // get test ads on a physical device. e.g.
         // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("19FFF68F245EBF6FDF3B434862CFA073")
                 .build();
         mAdView.loadAd(adRequest);
         // Create an ad request. Check logcat output for the hashed device ID to
@@ -125,7 +125,7 @@ public class MainActivityFragment extends Fragment {
     }
     private void requestNewInterstitial() {
         PublisherAdRequest adRequest = new PublisherAdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("19FFF68F245EBF6FDF3B434862CFA073")
                 .build();
         mPublisherInterstitialAd.loadAd(adRequest);
     }

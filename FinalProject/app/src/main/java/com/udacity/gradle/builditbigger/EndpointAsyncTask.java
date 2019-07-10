@@ -23,12 +23,13 @@ class EndpointAsyncTask extends AsyncTask<MainActivityFragment, Void, String> {
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
                     .setRootUrl("https://udacitybuilditbigger-244800.appspot.com/_ah/api/");
+           // .setRootUrl("http://10.0.2.2:8080/_ah/api/");
             myApiService = builder.build();
         }
         try {
             return myApiService.tellJoke().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            return null;
         }
 
 
