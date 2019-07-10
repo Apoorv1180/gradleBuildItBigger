@@ -68,7 +68,9 @@ dependencies {
     compile project(path: ':javaLib')
     compile project(path: ':androidlib')
     compile 'com.android.support:appcompat-v7:26.1.0'
-    compile 'com.google.android.gms:play-services-ads:11.8.0'
+    // Added for AdMob
+    //Ad Dependency, only include in free version, results in low apk size of paid app
+    freeCompile 'com.google.android.gms:play-services-ads:9.4.0'
     compile 'com.google.api-client:google-api-client:1.23.0'
     compile 'com.google.http-client:google-http-client-android:1.23.0'
     compile 'com.google.code.findbugs:jsr305:3.0.1'
